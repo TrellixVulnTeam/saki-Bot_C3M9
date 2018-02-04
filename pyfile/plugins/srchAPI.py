@@ -20,7 +20,7 @@ def search_book(message):
     # 検索のトップに出てくるものを結果として出力するよ
     # 参照：https://webservice.rakuten.co.jp/api/booksbooksearch/
 
-    payload = {'applicationId': '1051351458834896793', 'format': 'json', 'formatVersion': '2', 'title': search_word[1],
+    payload = {'applicationId': 'INSERT_YOUR_API_KEY', 'format': 'json', 'formatVersion': '2', 'title': search_word[1],
                'hits': '1', 'page': '1'}
 
     req = requests.get('https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?', params=payload).json()
